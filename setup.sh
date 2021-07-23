@@ -1,6 +1,4 @@
 #!/bin/bash
 
-cp kitty.conf ~/.config/kitty
-cp .gitconfig ~
-cp .vimrc ~
-cp .zshrc ~
+./install_packages.sh
+./cp_dotfiles.sh
