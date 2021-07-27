@@ -1,8 +1,10 @@
 #!/bin/bash
 
-cp kitty.conf ~/.config/kitty
+mkdir ~/.config/kitty
+cp kitty.conf ~/.config/kitty/
 cp .gitconfig ~
 cp .vimrc ~
 cp .zshrc ~
 cp .face.icon ~
 
+sudo cp doas.conf /etc/
