@@ -2,6 +2,7 @@
 
 mkdir ~/.config/kitty
 cp kitty.conf ~/.config/kitty/
+cp gtk.css ~/.config/gtk-3.0/
 cp .gitconfig ~
 cp .vimrc ~
 cp .zshrc ~

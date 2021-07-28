@@ -1,0 +1,28 @@
+window.xfce4-panel widget > box > button > image{
+   padding: 0.2em 0.16em;  -gtk-icon-transform: scale(0.8);
+}
+
+window#whiskermenu-window treeview>* {
+  padding:0.2em 0.16em;
+}
+
+#whiskermenu-window {
+	background-color: rgba(0,0,0,0.7);
+	color: #ccc;
+}
+#whiskermenu-window entry { 
+ 	background: rgba(0,0,0,0.7);
+}
+#whiskermenu-window iconview {
+	background-color: rgba(0,0,0,0.7);
+	color: #ccc;
+}
+
+#whiskermenu-window treeview {
+	background-color: rgba(0,0,0,0.0);
+	color: #ccc;
+}
+#whiskermenu-window treeview:hover {
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+}
