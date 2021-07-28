@@ -1,0 +1,61 @@
+from powerline_shell.themes.default import DefaultColor
+
+
+class Color(DefaultColor):
+    USERNAME_FG = 15
+    USERNAME_BG = 4
+    USERNAME_ROOT_BG = 1
+
+    HOSTNAME_FG = 15
+    HOSTNAME_BG = 10
+
+    HOME_SPECIAL_DISPLAY = True
+    HOME_BG = 4
+    HOME_FG = 15
+
+    PATH_FG = 15
+    PATH_BG = 8
+    CWD_FG = 15
+    SEPARATOR_FG = 8
+
+    READONLY_BG = 1
+    READONLY_FG = 7
+
+    REPO_CLEAN_FG = 6
+    REPO_CLEAN_BG = 0
+    REPO_DIRTY_FG = 5
+    REPO_DIRTY_BG = 0
+
+    JOBS_FG = 15
+    JOBS_BG = 8
+
+    CMD_PASSED_FG = 15
+    CMD_PASSED_BG = 2
+    CMD_FAILED_FG = 15
+    CMD_FAILED_BG = 1
+
+    SVN_CHANGES_FG = REPO_DIRTY_FG
+    SVN_CHANGES_BG = REPO_DIRTY_BG
+
+    GIT_AHEAD_BG = 0
+    GIT_AHEAD_FG = 5
+    GIT_BEHIND_BG = 0
+    GIT_BEHIND_FG = 1
+    GIT_STAGED_BG = 0
+    GIT_STAGED_FG = 3
+    GIT_NOTSTAGED_BG = 0
+    GIT_NOTSTAGED_FG = 1
+    GIT_UNTRACKED_BG = 0
+    GIT_UNTRACKED_FG = 1
+    GIT_CONFLICTED_BG = 0
+    GIT_CONFLICTED_FG = 1
+
+    VIRTUAL_ENV_BG = 0
+    VIRTUAL_ENV_FG = 0
+
+    AWS_PROFILE_FG = 0
+    AWS_PROFILE_BG = 0
+
+    TIME_FG = 0
+    TIME_BG = 0
+

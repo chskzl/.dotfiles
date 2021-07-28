@@ -8,4 +8,7 @@ cp .vimrc ~
 cp .zshrc ~
 cp .face.icon ~
 
+cp -r powerline-shell ~/.config/
+
 sudo cp doas.conf /etc/
+sudo cp -r plugins /usr/share/zsh
