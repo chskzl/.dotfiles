@@ -1,0 +1,17 @@
+{
+  "segments": [
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "root"
+  ],
+  "mode": "pixel",
+  "theme": "~/.config/powerline-shell/theme.py",
+  "vcs": {
+    "show_symbol": "true"
+  }
+}
+
+
