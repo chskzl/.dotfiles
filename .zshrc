@@ -1,4 +1,5 @@
 export PATH=./:/home/chase/.scripts:/home/chase/.local/share/gem/ruby/3.0.0/bin:$PATH
+export SHELL=/bin/zsh
 
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
 setopt nocaseglob                                               # Case insensitive globbing
@@ -52,21 +53,19 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 
 ## Alias section 
 alias sudo='doas'
+alias pacman='doas pacman'
 alias df='df -h'
-alias gitu='git add . && git commit && git push'
 alias v="vim"
 alias d="ls -alh"
 alias ls="ls -a --color=auto"
 alias mv="mv -iv"
 alias cp="cp -iv"
 alias phoon="clear && phoon | lolcat"
-alias ack="ack --color-match=cyan --color-lineno=blue"
 alias ports="netstat -tulanp"
 alias sha="shasum -a 256"
 alias lspkgs="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 alias searchpkgs="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
 alias todo="vim ~/Documents/todo.txt"
-alias docker="doas docker"
 
 # Directory nav
 alias docs="cd ~/Documents"
@@ -116,8 +115,6 @@ bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up			
 bindkey '^[[B' history-substring-search-down
-
-gwd | lolcat
 
 # Powerline shell prompt
 function powerline_precmd() {
